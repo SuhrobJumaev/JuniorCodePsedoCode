@@ -11,6 +11,7 @@ namespace JuniorCodePresudoCode.Patterns.ChainOfResponsibility
         public async override Task<ApiResponse> Procces(Request request)
         {
             //Some logic with Redis
+            //Here we can return response if user limit finished
 
             if (_next is not null)
             {
