@@ -12,6 +12,7 @@ namespace JuniorCodePresudoCode.Patterns.ChainOfResponsibility
         {
             //Some logic send to Identify provider or check cooke
 
+            //Here we can return response if we have some error with auth
             if(_next is not null)
             {
                 _response =  await _next.Procces(request);

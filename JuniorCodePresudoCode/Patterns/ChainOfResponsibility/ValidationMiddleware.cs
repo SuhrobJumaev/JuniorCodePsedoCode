@@ -11,7 +11,7 @@ namespace JuniorCodePresudoCode.Patterns.ChainOfResponsibility
         public async override Task<ApiResponse> Procces(Request request)
         {
             //Some logic fluent validation or custom validation 
-
+            //Here we can return response if we have some error with validation 
             if (_next is not null)
             {
                 _response = await _next.Procces(request);

@@ -1,6 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Dapper;
-using JuniorCodePresudoCode;
+using JuniorCodePresudoCode.Patterns;
 using JuniorCodePresudoCode.Patterns.Builder;
 using JuniorCodePresudoCode.Patterns.ChainOfResponsibility;
 
